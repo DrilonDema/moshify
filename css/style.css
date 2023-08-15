@@ -4,6 +4,8 @@
   --color-accent: #ff3400;
   --color-headings: #1b0760;
   --color-body: #918ca4;
+  --color-border:#ccc;
+  --border-radius:30px
 }
 
 /* Topography */
@@ -186,7 +188,7 @@ a {
   white-space: nowrap;
   text-align: center;
   margin:1rem 0;
-  box-sizing: border-box;
+
 }
 
 .btn--primary{
@@ -220,7 +222,7 @@ a {
 }
 .btn--accent:hover{
   
-  background: #fd4516;
+  background: #fd4416cc;
 
 }
 .btn--block{
@@ -252,7 +254,7 @@ a {
 
 .input{
   padding: 1.5rem 3rem;
-  border: 1px solid #ccc;
+  border: 1px solid var(--color-border);
   border-radius: 30px;
   outline: 0;
   color:  var(--color-headings);
@@ -270,4 +272,28 @@ a {
     font-size: 1.5rem;
   }
   
+}
+
+.search--icon{
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+  margin-right:10px;
+  
+}
+
+.input-group{
+  border: 1px solid var(--color-border);
+  border-radius: 30px;
+  outline: 0;
+  display: flex;
+}
+
+.input-group .input{
+  border: 0;
+  flex-grow: 1;
+}
+
+.input-group .btn{
+  margin: 4px;
 }
