@@ -396,3 +396,22 @@ a {
   top: -8px;
   right: 5%;
 }
+
+/* Media */
+
+.media{
+  display: flex;
+  
+}
+
+.media__title{
+  margin-top: 0;
+}
+
+.media__image{
+  margin-top: 14px;
+}
+
+.media__body{
+  margin: 0 2rem;
+}
