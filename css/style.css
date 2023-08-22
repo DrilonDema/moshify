@@ -95,7 +95,7 @@ a {
 
 .badge {
   border-radius: 20px;
-  padding: 0.5rem 0.2rem;
+  padding: 0.3rem 1rem;
   font-weight: 600;
   font-size: 2rem;
   white-space: nowrap;
@@ -145,6 +145,7 @@ a {
 .list--tick .list__item {
   padding-left: 0.5rem;
   margin-bottom: 1rem;
+  color: var(--color-headings);
 }
 
 @media screen and (min-width: 1024px) {
@@ -231,13 +232,15 @@ a {
 
 }
 
-.bnt--outline{
+.btn--outline{
   border: 2.5px  solid var(--color-headings);
   color: var(--color-headings);
   background-color: #fff;
+  
+  
 }
 
-.bnt--outline:hover{
+.btn--outline:hover{
   border-color: var(--color-headings);
   color: #fff;
   background-color: var(--color-headings);
@@ -296,4 +299,100 @@ a {
 
 .input-group .btn{
   margin: 4px;
+}
+
+/* Card */
+
+.card{
+  border-radius: 7px;
+  box-shadow: 0 0 20px 10px #f3f3f3;
+  overflow: hidden;
+
+  
+}
+
+.card__header,.card__body{
+  padding: 2rem 3rem;
+
+}
+
+ .card--primary .card__header{
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+
+
+.card--secondary .card__header{
+  background-color: var(--color-secondary);
+  color: #fff;
+}
+
+.card--secondary .badge--secondary{
+  background-color: #02cdf1;
+  margin-left: 1rem;
+
+}
+
+
+
+/* Plans */
+
+.plan__name {
+  color: #fff;
+  margin: 0;
+  font-weight: 500;
+  font-size:2.4rem ;
+}
+
+.plan__price{
+  font-size: 6rem;
+}
+
+.plan__billing-cycle{
+  font-size: 2.4rem;
+  font-weight: 300;
+  opacity: 0.8;
+
+}
+
+.plan__description{
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: normal;
+  display: block;
+}
+
+.plan .list__item{
+  margin-bottom: 2rem;
+
+  
+}
+
+@media screen and (min-width:1024px) {
+
+  .plan__name{
+    font-size: 1.4rem;
+  }
+  
+  .plan__price{
+    font-size: 5rem;
+  }
+
+  .plan__billing-cycle{
+    font-size: 1.6rem;
+  }
+}
+
+.plan--popular .card__header{
+  position: relative;
+}
+
+.plan--popular .card__header::before{
+  content: url('../images/popular.svg');
+  position: absolute;
+  display: inline-block;
+  width: 40px;  
+  top: -8px;
+  right: 5%;
 }
