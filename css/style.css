@@ -25,6 +25,11 @@ body {
   color: var(--color-body);
 }
 
+.container{
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
 h1,
 h2,
 h3,
@@ -613,4 +618,41 @@ blockquote{
   opacity: 1;
   max-height: 100vh;
 }
+
+/*  Blocks  */
+.block{
+  --vertical-padding : 6rem;
+  padding: var(--vertical-padding) 2rem;
+
+}
+
+.block__heading{
+  margin-top: 0;
+}
+
+.block--dark{
+  background-color: #000;
+  color: #7b858b;
+}
+
+.block--dark .block__heading {
+  color: #fff;
+}
+
+.block--skewed-right{
+
+  padding: calc(var(--vertical-padding) + 4rem);
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 80%);
+}
+
+.block--skewed-left{
+
+  padding: calc(var(--vertical-padding) + 4rem);
+  clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%);
+}
+
+.block__header{
+  text-align: center;
+}
+
 
