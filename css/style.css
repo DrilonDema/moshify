@@ -821,3 +821,39 @@ blockquote{
 .plan--popular:hover{
   transform: scale(1.15);
 }
+
+/* Features */
+.feature{
+
+  gap: 3rem 4rem;
+  margin: 6rem 0
+}
+
+.feature__heading {
+
+  margin: 1rem 0;
+}
+
+.feature_image{
+  width: 100%;
+}
+
+picture img {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  div .feature__content{
+    order: 2;
+  }
+  
+}
+
+.feature:first-of-type{
+  margin-top: 6rem;
+}
+
+.block_header{
+  text-align: center;
+
+}
